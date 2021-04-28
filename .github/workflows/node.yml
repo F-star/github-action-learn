@@ -14,5 +14,7 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: 14
+      - name: ls
+        run: ls
       - name: run node script
         run: node index.js
