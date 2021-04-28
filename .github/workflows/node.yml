@@ -1,0 +1,16 @@
+name: Node Example
+on:
+  push:
+    branches:
+      - node
+
+jobs:
+  builds:
+    runs-on: ubuntu-latest
+    steps:
+      - name: use Node.js 14
+        uses: actions/setup-node@v1
+        with:
+          node-version: 10
+      - name: run node script
+        run: node index.js
