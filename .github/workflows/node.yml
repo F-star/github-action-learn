@@ -13,6 +13,6 @@ jobs:
       - name: use Node.js 14
         uses: actions/setup-node@v1
         with:
-          node-version: 10
+          node-version: 14
       - name: run node script
         run: node index.js
